@@ -1,0 +1,8 @@
+{
+  "vocation": {
+    "employeeName": "string",
+    "employeePosition": "string",
+    "bossName": "string",
+    "bossPosition": "string"
+  }
+}
