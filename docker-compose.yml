@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  jasper-app:
+    image: jasper-app-last:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      CONFIG_PATH: /external-reports/config.json
+      REPORT_DIRECTORY: /external-reports
+    volumes:
+      - C:\Users\Asus\Downloads\jasper-reports-config:/external-reports
