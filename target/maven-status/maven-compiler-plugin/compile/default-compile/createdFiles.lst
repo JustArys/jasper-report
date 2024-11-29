@@ -1,0 +1,4 @@
+com\example\jasperrepo\controller\ReportController.class
+com\example\jasperrepo\JasperRepoApplication.class
+com\example\jasperrepo\service\JReportService.class
+com\example\jasperrepo\config\ReportConfig.class
