@@ -12,4 +12,4 @@ services:
       CONFIG_PATH: /external-reports/config.json
       REPORT_DIRECTORY: /external-reports
     volumes:
-      - C:\Users\Asus\Downloads\jasper-reports-config:/external-reports
+      - C:\Users\Asus\IdeaProjects\jasper-repo\templ:/external-reports

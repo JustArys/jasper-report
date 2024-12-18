@@ -1,0 +1,17 @@
+{
+  "vocation": {
+    "fullName": "Arystanbek A. K.",
+    "date_of_birth": "2001-08-15",
+    "previous_fullName": "Arystanbek Kuanyshbekovich",
+    "nationality": "Kazakh",
+    "IIN": "010815300123",
+    "place_of_birth": "Astana, Kazakhstan",
+    "registration_address": "123, Republic Avenue, Astana, Kazakhstan",
+    "id_card": "Passport: KZ1234567, Issued: 2020-01-01",
+    "marital_status": "Single",
+    "relatives_status": "Father: Kuanyshbek A., Mother: Aliya K.",
+    "phone_number": "+7 777 123 4567, +7 701 987 6543",
+    "email": "arystanbek.k@example.com",
+    "photo": ""
+  }
+}

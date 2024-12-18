@@ -15,8 +15,8 @@ import java.util.*;
 public class JReportService {
 
     // Получаем путь к папке отчетов из переменной окружения или используем путь по умолчанию
-    private static final String REPORT_DIRECTORY = System.getenv("REPORT_DIRECTORY") != null ?
-            System.getenv("REPORT_DIRECTORY") : "C:\\Users\\Asus\\Downloads\\jasper-reports-confg";
+    private static final String REPORT_DIRECTORY = System.getenv("REPORT_DIRECTORY") != null ? //C:\Users\Asus\IdeaProjects\jasper-repo\templ\vocation.jrxml
+            System.getenv("REPORT_DIRECTORY") : "C:\\Users\\Asus\\IdeaProjects\\jasper-repo\\templ";
 
     public void exportJasperReport(String name, Map<String, Object> data, HttpServletResponse response) throws JRException, IOException {
         try {

@@ -20,7 +20,7 @@ public class ReportConfig {
         // Получаем путь из переменной окружения или задаем путь по умолчанию
         String configPath = System.getenv("CONFIG_PATH");
         if (configPath == null || configPath.isEmpty()) {
-            configPath = "C:\\Users\\Asus\\Downloads\\jasper-reports-confg\\config.json"; // Путь по умолчанию для локальной машины
+            configPath = "C:\\Users\\Asus\\IdeaProjects\\jasper-repo\\templ\\config.json"; // C:\Users\Asus\IdeaProjects\jasper-repo\templ
         }
 
         // Проверяем существование файла конфигурации
