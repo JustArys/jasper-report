@@ -54,7 +54,7 @@
     <field name="email" class="java.lang.String"/>
     <field name="photo" class="java.lang.String"/>
 
-     <background splitType="Stretch"/>
+    <background splitType="Stretch"/>
     <title height="93" splitType="Stretch">
         <element kind="staticText" uuid="a3e14336-7f8a-4ed0-8644-1be789ad3164" x="0" y="30" width="557" height="60" fontSize="14.0" bold="true" hTextAlign="Center">
             <text><![CDATA[Заключение
