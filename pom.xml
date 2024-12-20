@@ -6,26 +6,13 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.4.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>com.example</groupId>
     <artifactId>jasper-repo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>jasper-repo</name>
     <description>jasper-repo</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
     <properties>
         <java.version>21</java.version>
     </properties>
@@ -39,7 +26,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -57,6 +43,7 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Jasper Reports dependencies -->
         <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
@@ -66,6 +53,34 @@
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports-pdf</artifactId>
             <version>7.0.1</version>
+        </dependency>
+
+        <!-- Apache Commons IO dependency with updated version -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.14.0</version>
+        </dependency>
+
+        <!-- Add Mockito Agent to fix the self-attaching issue -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.14.2</version> <!-- Make sure to use the correct version -->
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Add Byte Buddy agent to fix dynamic agent loading warning -->
+        <dependency>
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy-agent</artifactId>
+            <version>1.15.10</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jdt</groupId>
+            <artifactId>org.eclipse.jdt.core</artifactId>
+            <version>3.37.0</version> <!-- Для поддержки компиляции JRXML -->
         </dependency>
 
     </dependencies>
@@ -84,7 +99,27 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <argLine>-javaagent:${settings.localRepository}/net/bytebuddy/byte-buddy-agent/1.15.10/byte-buddy-agent-1.15.10.jar -XX:+EnableDynamicAgentLoading</argLine>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
-
 </project>

@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.9"
 
 services:
   jasper-app:
@@ -12,4 +12,4 @@ services:
       CONFIG_PATH: /external-reports/config.json
       REPORT_DIRECTORY: /external-reports
     volumes:
-      - C:\Users\Asus\IdeaProjects\jasper-repo\templ:/external-reports
+      - ./templ:/external-reports
