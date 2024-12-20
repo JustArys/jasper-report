@@ -25,6 +25,21 @@
     "conclusions": "Eligible for further service or training based on current records.",
     "contacts": "+7 777 123 4567 (Primary), +7 701 987 6543 (Secondary)",
     "job_title": "Senior Frontend Developer"
+  },
+  "education" : {
+    "Education_degree": "Bachelor of Software Engineering",
+    "Offline_online": "Offline",
+    "Gpa": "3.85",
+    "Graduation_year": "2025",
+    "Qualification": "Software Developer",
+    "Qualification_degree": "Bachelor's Degree",
+    "ENT_results": "123",
+    "Country_of_education": "Kazakhstan",
+    "Qualification_increase_courses": "EPAM Tech Orda Java Developer Course, Completed in 2024",
+    "Characteristics_from_education_place": "Active student, group leader, participated in volunteer work, excellent academic performance."
   }
+
+
+
 
 }
