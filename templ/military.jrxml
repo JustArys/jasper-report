@@ -1,0 +1,324 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="Report_3" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="802af159-af97-4976-8389-52cce2333edd">
+    <style name="Base" default="true" fontName="Times New Roman" fontSize="12" pdfFontName="timesnewromanpsmt.ttf" pdfEncoding="Identity-H" pdfEmbedded="true"/>
+
+    <field name="military" class="java.lang.String"/>
+    <field name="work_experience" class="java.lang.String"/>
+    <field name="criminal_records" class="java.lang.String"/>
+    <field name="legal_capacity" class="java.lang.String"/>
+    <field name="drug_records" class="java.lang.String"/>
+    <field name="psychoneurological_records" class="java.lang.String"/>
+    <field name="relatives_info" class="java.lang.String"/>
+    <field name="conclusions" class="java.lang.String"/>
+    <field name="contacts" class="java.lang.String"/>
+    <field name="job_title" class="java.lang.String"/>
+    <background splitType="Stretch"/>
+    <detail>
+        <band height="570" splitType="Stretch">
+            <element kind="staticText" uuid="3ada4f28-4a06-4cd5-a57a-c854ab8a3f28" x="0" y="25" width="279" height="49" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Специальное или воинское звание вне КНБ (дата и номер приказа, кем присвоено)]]></text>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5a33d238-68e2-4395-be73-62312c48dac2"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="f39a1e44-ef72-4ee4-90ab-5747cf626a45" x="0" y="74" width="279" height="54" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Прохождение воинской службы, в том числе срочной/
+по призыву/ по контракту (дата и номер приказа, кем присвоено) ]]></text>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ddca89b4-f055-42f6-8344-1b81a98dba0a"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="f6043240-215c-451c-ac4a-11179a60b33d" x="0" y="0" width="557" height="25" bold="true" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Военная служба]]></text>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="0eea1b7d-dc2c-4687-b5aa-d531c353ee9a" x="279" y="25" width="278" height="103" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{military}]]></expression>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="30a85444-199e-4b90-a3ea-f5af6f875fd6"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="6089afe8-0caa-49ec-9259-4747dfa4e31a" x="0" y="128" width="557" height="25" bold="true" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Трудовая деятельность]]></text>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="0622ec66-4a15-4050-9097-206fdc3739bb" x="0" y="153" width="279" height="54" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Трудовая деятельность по текущему и прежним местам работы (указать срок, должность и наименование организации, зарплату по текущему месту работы)]]></text>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ddca89b4-f055-42f6-8344-1b81a98dba0a"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="2019fd42-91e2-45d5-95b3-57ff366293e3" x="279" y="153" width="278" height="54" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{work_experience}]]></expression>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="d07f6fa7-55f5-4b82-8d98-d2a3a8919ebd" x="1" y="321" width="279" height="45" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Cведения о дееспособности (кандидат и его близкие родственники)]]></text>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5a33d238-68e2-4395-be73-62312c48dac2"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="80a5e9f4-f887-4258-8469-790f1bdadc48" x="1" y="366" width="279" height="34" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Сведения об учете в наркологическом диспансере (кандидат и его близкие родственники)]]></text>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ddca89b4-f055-42f6-8344-1b81a98dba0a"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="40610f86-4131-4b6f-85c3-9b2acf5044ba" x="1" y="400" width="279" height="40" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Сведения об учете в психоневрологическом диспансере (кандидат и его близкие родственники) ]]></text>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc70b2a-28b7-42e5-b203-76aa712f8fd1"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="cb0b1a82-389d-4369-8e09-37106bfb4ac4" x="1" y="480" width="279" height="25" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Справка по результатам первичного контакта:]]></text>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d881487-4db2-433b-98af-38cf203072cd"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="8a883bbd-c2a7-4a53-b7ee-2154cc155c4f" x="1" y="440" width="279" height="40" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Сведения о близких родственниках (раздел с раскрытием полных данных на близких родственников и без):]]></text>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0f55d325-4924-47d3-92e3-5d933c0510a7"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="2d828ab2-c0c4-4af7-aabe-6252c7c5125b" x="1" y="505" width="279" height="25" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Вывод:  ]]></text>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0112e8d4-bbd9-4ad8-ad7c-8e9239252c25"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="36e657bf-d870-46b2-8219-42b7ee4b2993" x="1" y="281" width="279" height="40" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Сведения о судимости и иных правонарушений (кандидат и его близкие родственники)]]></text>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3d68ab66-2479-490a-8595-ee322fe6dfcd"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="661d9932-3132-488f-928d-f2212e472877" x="1" y="530" width="279" height="40" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Наименование должности (выводятся данные на сотрудника проводившим первичное изучение и начальника кадрового подразделения): ]]></text>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0112e8d4-bbd9-4ad8-ad7c-8e9239252c25"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="d3a9a5a9-8c14-4774-ab3b-700b091d5141" x="0" y="207" width="557" height="43" bold="true" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Специальная проверка
+(доступ только кадровым аппаратам, осуществляющим изучение кандидата)]]></text>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="0ef37609-9158-4afa-ae2e-44e557db1750" x="280" y="281" width="278" height="40" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{criminal_records}]]></expression>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="14a30c82-f5d1-4683-915a-f8ea75ba4737" x="280" y="321" width="278" height="45" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{legal_capacity}]]></expression>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="f3f5a6e1-c2e9-454b-b3e0-c60f980525f1" x="280" y="366" width="278" height="34" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{drug_records}]]></expression>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="ff7101b9-e511-4867-b9ec-a81516474606" x="280" y="400" width="278" height="40" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{psychoneurological_records}]]></expression>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="88708b74-d414-49ad-845e-cf90f4c51b51" x="280" y="440" width="278" height="40" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{relatives_info}]]></expression>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="a2ae95fd-3812-4ae9-a36d-9b9d485103c5" x="280" y="505" width="278" height="25" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{conclusions}]]></expression>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="d3a5d0fd-c87d-4919-a695-27137f2e1039" x="280" y="480" width="278" height="25" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{contacts}]]></expression>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="d4fb9fe5-eaa3-4921-8f90-a1622c863283" x="280" y="530" width="278" height="40" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{job_title}]]></expression>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="a433fe75-bed1-4978-8989-1257e7874273" x="0" y="250" width="557" height="31" bold="true" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[I. Результаты проверки по базам госорганов ]]></text>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+        </band>
+    </detail>
+</jasperReport>

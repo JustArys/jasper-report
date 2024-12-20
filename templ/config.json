@@ -13,5 +13,18 @@
     "phone_number": "+7 777 123 4567, +7 701 987 6543",
     "email": "arystanbek.k@example.com",
     "photo": ""
+  },
+  "military" : {
+    "military": "Reserve Sergeant, Electronic Computing Machines, completed training in 2023.",
+    "work_experience": "Frontend Developer, 10+ years of experience, specializing in React and Angular.",
+    "criminal_records": "No criminal records.",
+    "legal_capacity": "Fully legally capable with no restrictions.",
+    "drug_records": "No history of drug use or related issues.",
+    "psychoneurological_records": "No psychoneurological disorders recorded.",
+    "relatives_info": "Father: Kuanyshbek A., retired engineer. Mother: Aliya K., school teacher.",
+    "conclusions": "Eligible for further service or training based on current records.",
+    "contacts": "+7 777 123 4567 (Primary), +7 701 987 6543 (Secondary)",
+    "job_title": "Senior Frontend Developer"
   }
+
 }
