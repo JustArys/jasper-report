@@ -2,6 +2,10 @@ package com.example.jasperrepo.service;
 
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRMapCollectionDataSource;
+import net.sf.jasperreports.export.SimpleExporterInput;
+import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
+import net.sf.jasperreports.pdf.JRPdfExporter;
+import net.sf.jasperreports.pdf.SimplePdfExporterConfiguration;
 import org.springframework.stereotype.Service;
 import jakarta.servlet.http.HttpServletResponse;
 
@@ -36,18 +40,27 @@ public class JReportService {
             // Компиляция отчета
             JasperReport jasperReport = JasperCompileManager.compileReport(reportStream);
 
+            jasperReport.setProperty("net.sf.jasperreports.engine.element.split.allowed", "true");
+
             // Заполнение отчета параметрами и источником данных
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, data, dataSource);
 
-            // Установка заголовков ответа и экспорт в PDF
+
+           /* // Установка заголовков ответа и экспорт в PDF
             response.setContentType("application/pdf");
             response.setHeader("Content-Disposition", "attachment; filename=" + name + "_report.pdf");
             response.setHeader("Cache-Control", "no-cache");
+*/
+            JRPdfExporter exporter = new JRPdfExporter();
+            exporter.setExporterInput(new SimpleExporterInput(jasperPrint));
+            exporter.setExporterOutput(new SimpleOutputStreamExporterOutput(response.getOutputStream()));
 
-            // Экспорт в PDF-поток
-            JasperExportManager.exportReportToPdfStream(jasperPrint, response.getOutputStream());
-            response.getOutputStream().flush();
-            response.getOutputStream().close();
+            SimplePdfExporterConfiguration configuration = new SimplePdfExporterConfiguration();
+            configuration.setCompressed(true); // Уменьшить размер файла
+            configuration.setCreatingBatchModeBookmarks(true); // Поддержка многостраничности
+            exporter.setConfiguration(configuration);
+// Экспорт отчёта
+            exporter.exportReport();
 
         } catch (Exception e) {
             // Обработка ошибок перед отправкой ответа
