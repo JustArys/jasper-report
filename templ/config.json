@@ -57,7 +57,7 @@
   "IIN": 123456789012,
   "marital_status": "Single",
   "phone_number": "+77012345678",
-  "photo": "path/to/photo.jpg",
+  "photo": "base64",
   "national_id_number": "123456789",
   "national_id_date_of_provision": "2010-01-01",
   "national_id_expiration_date": "2030-01-01",

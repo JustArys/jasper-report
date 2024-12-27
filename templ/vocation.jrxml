@@ -355,7 +355,7 @@
                 <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 <property name="com.jaspersoft.studio.unit.y" value="px"/>
             </element>
-            <element kind="image" uuid="8be916b1-ed68-4530-8ee5-621a86466f51" x="2" y="59" width="179" height="235">
+            <element kind="image" uuid="5ca2376c-b8be-4318-9b2c-625cef44d138" positionType="FixRelativeToBottom" x="10" y="30" width="160" height="180" onErrorType="Blank" lazy="true">
                 <expression><![CDATA[
         new java.io.ByteArrayInputStream(
             java.util.Base64.getDecoder().decode(
