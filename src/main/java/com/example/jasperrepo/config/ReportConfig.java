@@ -23,7 +23,6 @@ public class ReportConfig {
             configPath = "C:\\Users\\Asus\\IdeaProjects\\jasper-repo\\templ\\config.json"; // C:\Users\Asus\IdeaProjects\jasper-repo\templ
         }
 
-        // Проверяем существование файла конфигурации
         File configFile = new File(configPath);
         if (!configFile.exists()) {
             throw new IOException("Configuration file not found at path: " + configPath);

@@ -1,0 +1,255 @@
+{
+  "vocation": {
+    "fullName": "Arystanbek A. K. ArystanbekArystanbekArystanbekArystanbekArystanbekArystanbek ArystanbekArystanbekArystanbekArystanbekArystanbekArystanbek   ",
+    "previous_fullName": "",
+    "date_of_birth": "2001-08-15 ",
+    "place_of_birth": "Astana, Kazakhstan  ArystanbekArystanbekArystanbekArystanbekArystanbekArystanbekArystanbekArystanbekArystanbekArystanbekArystanbekArystanbek ",
+    "nationality": "Kazakh ",
+    "IIN": "010815300123  ",
+    "marital_status": "Single ",
+    "phone_number": "+7 777 123 4567, +7 701 987 6543  "
+  },
+  "national_id": {
+    "national_id_number": "ID123456789",
+    "national_id_date_of_provision": "2023-03-15",
+    "national_id_expiration_date": "2028-03-15",
+    "national_id_issuing_authority": "National Registration Authority"
+  },
+  "passport": {
+    "passport_number": "P12345678",
+    "passport_date_of_provision": "2023-05-01",
+    "passport_expiration_date": "2033-05-01",
+    "passport_issuing_authority": "Kazakhstan Ministry of Foreign Affairs"
+  },
+  "birth_certificate": {
+    "birth_certificate_id": "BC123456789",
+    "birth_certificate_parents_mom": "Aliya Kuanyshbekovna",
+    "birth_certificate_parents_dad": "Kuanyshbek A.",
+    "birth_certificate_number": "BC123456",
+    "birth_certificate_date_of_provision": "2001-08-20",
+    "birth_certificate_issuing_authority": "Civil Registration Office, Astana"
+  },
+  "marriage_certificate": {
+    "marriage_certificate_full_name_of_husband_wife": "Arystanbek A. K.",
+    "marriage_certificate_date_of_marriage": "2023-06-15",
+    "marriage_certificate_new_full_name": "Alia Kuanyshbekovna",
+    "marriage_certificate_series_and_number": "MC123456",
+    "marriage_certificate_date_of_provision": "2023-06-20",
+    "marriage_certificate_issuing_authority": "Civil Registry Office, Astana"
+  },
+  "divorce_certificate": {
+    "divorce_certificate_full_name_of_husband_wife": "Arystanbek A. K.",
+    "divorce_certificate_series_and_number": "DC123456",
+    "divorce_certificate_number_by_journal": "1234567",
+    "divorce_certificate_date_of_provision": "2024-01-20",
+    "divorce_certificate_issuing_authority": "Civil Registry Office, Astana"
+  },
+  "death_certificate": {
+    "death_certificate_date_of_death": "2024-12-20",
+    "death_certificate_series_and_number": "DC123456",
+    "death_certificate_date_of_provision": "2024-12-21",
+    "death_certificate_issuing_authority": "Civil Registry Office, Astana"
+  },
+  "document_about_birth": {
+    "document_about_birth_number": "BC123456",
+    "document_about_birth_date_of_provision": "2001-08-20",
+    "document_about_birth_issuing_authority": "Civil Registration Office, Astana",
+    "document_about_birth_document_type": "Birth Certificate"
+  },
+  "birth_record": {
+    "birth_record_actual_number_of_record": "1234567",
+    "birth_record_registration_date": "2001-08-20",
+    "birth_record_number_of_children": "0",
+    "birth_record_was_child_born_dead_or_alive": "Alive",
+    "birth_record_order_of_birth": "1st",
+    "birth_record_issuing_authority": "Civil Registration Office, Astana"
+  },
+  "death_record": {
+    "death_record_date_of_death": "2024-12-20",
+    "death_record_place": "Astana, Kazakhstan",
+    "death_record_reason": "Natural causes",
+    "death_record_number": "12345678",
+    "death_record_date_of_registration": "2024-12-21",
+    "death_record_issuing_authority": "Civil Registration Office, Astana"
+  },
+  "address_of_registration": {
+    "address_of_registration_city": "Astana",
+    "address_of_registration_region": "Akmola",
+    "address_of_registration_street_and_house": "123 Main St, Apt 10",
+    "address_of_registration_apartment_number": "10"
+  },
+  "military": {
+    "military_date_of_admission_and_termination": "Reserve Sergeant, Electronic Computing Machines, completed training in 2023.",
+    "military_military_branch": "Frontend Developer, 10+ years of experience, specializing in React and Angular.",
+    "military_place_of_service": "No criminal records.",
+    "military_type_of_service": "Fully legally capable with no restrictions."
+  },
+  "education": {
+    "education_degree": "Bachelor of Software Engineering",
+    "education_name_of_the_place": "Almaty State University",
+    "education_date_of_enrollment": "2018-09-01",
+    "education_graduation_date": "2022-06-15",
+    "education_offline_online": "Offline",
+    "education_qualification_degree": "Bachelor's Degree",
+    "education_qualification": "Software Developer",
+    "education_gpa": "3.85"
+  },
+  "qualification_increase_courses": {
+    "qualification_increase_courses_name": "Frontend Development Bootcamp",
+    "qualification_increase_courses_directions": "React, Angular, JavaScript",
+    "qualification_increase_courses_education_place": "Tech Academy, Astana",
+    "qualification_increase_courses_date_of_enrollment_and_graduation": "2023-01-15 - 2023-03-15"
+  },
+  "labor_activity": {
+    "labor_activity_name": "Frontend Developer at Tech Company",
+    "labor_activity_date_of_admission_and_termination": "2022-07-01 - Present",
+    "labor_activity_position": "Senior Frontend Developer"
+  },
+  "criminal_record": {
+    "criminal_record_detentionMeasure": "Detention in custody",
+    "criminal_record_arrestDate": "2023-06-09",
+    "criminal_record_initiatingAuthority": "Department of ADGS and PC in Astana",
+    "criminal_record_criminalCaseNumber": "236300131000020",
+    "criminal_record_criminalCaseInitiationDate": "2023-04-23",
+    "criminal_record_archiveCaseNumber": "98975454",
+    "criminal_record_chargeArticle": "Article 366, Part 3, Clause 2 of the Criminal Code of the RK",
+    "criminal_record_crimeNature": "Receiving a bribe",
+    "criminal_record_convictionAuthority": "Court No. 2 of Astana",
+    "criminal_record_convictionDate": "2023-04-23",
+    "criminal_record_sentenceDuration": "Deprived of liberty for six years",
+    "criminal_record_convictionArticle": "Part 1-1 of Article 366 of the Criminal Code of the RK",
+    "criminal_record_crimeSeverity": "Severe",
+    "criminal_record_previousConvictionInfo": null,
+    "criminal_record_sentenceEffectiveDate": "2024-01-24",
+    "criminal_record_sentenceCalculationStartDate": "2023-04-23",
+    "criminal_record_formalRehabilitationTerm": null,
+    "criminal_record_criminalCaseTerminationBasis": null,
+    "criminal_record_criminalCaseTerminationDate": null,
+    "criminal_record_convictMovementData": "Released from Institution No. 73 of DUIS VKO",
+    "criminal_record_releaseDate": "2024-08-24",
+    "criminal_record_additionalNotes": "Based on Articles 40 and 49 of the Criminal Code of the RK, stripped of the special title 'Police Lieutenant'. In accordance with Article 62 of the Criminal Code of the RK, the sentence was replaced with a fine."
+  },
+  "corruption_offences": {
+    "corruption_offences_materialNumber": "231900030268979",
+    "corruption_offences_violatingAuthority": "Police Department No. 19190003, Astana",
+    "corruption_offences_caseInitiationDate": "2023-05-26",
+    "corruption_offences_decisionMakingAuthority": "Police Department No. 19190003, Astana",
+    "corruption_offences_qualification": "Receiving a gift while performing official duties",
+    "corruption_offences_decisionDate": "2023-05-26",
+    "corruption_offences_decision": "Reviewed with the imposition of a penalty",
+    "corruption_offences_penaltyAmount": "90000"
+  },
+  "administration_offences": {
+    "administration_offences_materialNumber": "231900030268979",
+    "administration_offences_violatingAuthority": "Police Department No. 19190003, Astana",
+    "administration_offences_caseInitiationDate": "2023-05-26",
+    "administration_offences_decisionMakingAuthority": "Police Department No. 19190003, Astana",
+    "administration_offences_qualification": "Receiving a gift while performing official duties",
+    "administration_offences_decisionDate": "2023-05-26",
+    "administration_offences_decision": "Reviewed with the imposition of a penalty",
+    "administration_offences_penaltyAmount": "90000"
+  },
+  "dismissal_from_public_service_for_negative_reasons": {
+    "dismissal_from_public_service_for_negative_reasons_workplace": "Police Department of Astana",
+    "dismissal_from_public_service_for_negative_reasons_position": "District Inspector of the Police Department for Yesil District, Astana",
+    "dismissal_from_public_service_for_negative_reasons_registrationDate": "2023-06-12",
+    "dismissal_from_public_service_for_negative_reasons_materialNumber": "6",
+    "dismissal_from_public_service_for_negative_reasons_decisionMakingAuthority": "Police Department of Astana",
+    "dismissal_from_public_service_for_negative_reasons_orderNumberAndDate": "412ls dated 2023-06-12"
+  },
+  "disciplinary_offenses_that_discredit_public_service": {
+    "disciplinary_offenses_that_discredit_public_service_offendingAuthorityName": "Police Department of Astana",
+    "disciplinary_offenses_that_discredit_public_service_factFindingAuthority": "Department of ADGS and PC in Astana",
+    "disciplinary_offenses_that_discredit_public_service_caseSummary": "Within the framework of ERDR No. 236300131000003 dated 2023-01-14 under Article 366, Part 3, Clause 2 of the Criminal Code of the RK for receiving monetary rewards for the illegal release of impounded vehicles from a specialized parking lot in Astana.",
+    "disciplinary_offenses_that_discredit_public_service_disciplinaryOffenseQualification": "According to Article 50 of the Law of the Republic of Kazakhstan 'On Public Service' Clause 1 Sub-clause 2)",
+    "disciplinary_offenses_that_discredit_public_service_disciplinaryActionDecisionNumberAndDate": "412ls dated 2023-06-08",
+    "disciplinary_offenses_that_discredit_public_service_issuingOfficerPositionAndName": "Head of the Police Department of Astana, Omarbekov E.B.",
+    "disciplinary_offenses_that_discredit_public_service_disciplinaryAction": "Dismissal from position"
+  },
+  "on_the_limitation_of_legal_capacity": {
+    "on_the_limitation_of_legal_capacity_status": "Legally incapacitated (restricted)",
+    "on_the_limitation_of_legal_capacity_decisionNumber": "4752-19-2/92",
+    "on_the_limitation_of_legal_capacity_decisionDate": "2019-05-13",
+    "on_the_limitation_of_legal_capacity_decisionMakingAuthority": "District Court of Yesil District, Astana"
+  },
+  "dispensary_accounting_narcology": {
+    "dispensary_accounting_narcology_cardNumber": "004736",
+    "dispensary_accounting_narcology_registrationDate": "2017-05-15",
+    "dispensary_accounting_narcology_diagnosis": "Severe mental retardation with no or mild behavioral disturbance",
+    "dispensary_accounting_narcology_deregistrationDate": null,
+    "dispensary_accounting_narcology_deregistrationReason": null,
+    "dispensary_accounting_narcology_medicalOrganization": "Specialized Multidisciplinary Hospital of the Akimat of Astana",
+    "dispensary_accounting_narcology_doctorFullName": "Kaliyeva Bagila Ismagulovna",
+    "dispensary_accounting_narcology_doctorSpecialization": "Psychiatrist"
+  },
+  "dispensary_registration_tuberculosis": {
+    "dispensary_registration_tuberculosis_cardNumber": "004736",
+    "dispensary_registration_tuberculosis_registrationDate": "2017-05-15",
+    "dispensary_registration_tuberculosis_diagnosis": "Tuberculosis, Stage 2",
+    "dispensary_registration_tuberculosis_deregistrationDate": null,
+    "dispensary_registration_tuberculosis_deregistrationReason": null,
+    "dispensary_registration_tuberculosis_medicalOrganization": "Specialized Multidisciplinary Hospital of the Akimat of Astana",
+    "dispensary_registration_tuberculosis_doctorFullName": "Kaliyeva Bagila Ismagulovna",
+    "dispensary_registration_tuberculosis_doctorSpecialization": "Resident Doctor"
+  },
+  "dispensary_registration_psycho": {
+    "dispensary_registration_psycho_cardNumber": "004736",
+    "dispensary_registration_psycho_registrationDate": "2017-05-15",
+    "dispensary_registration_psycho_diagnosis": "Tuberculosis, Stage 2",
+    "dispensary_registration_psycho_deregistrationDate": null,
+    "dispensary_registration_psycho_deregistrationReason": null,
+    "dispensary_registration_psycho_medicalOrganization": "Specialized Multidisciplinary Hospital of the Akimat of Astana",
+    "dispensary_registration_psycho_doctorFullName": "Kaliyeva Bagila Ismagulovna",
+    "dispensary_registration_psycho_doctorSpecialization": "Resident Doctor"
+  },
+  "information_about_close_relatives": {
+    "information_about_close_relatives_relationshipDegree": "Father",
+    "information_about_close_relatives_fullName": "Tolepbergenov Beibit Duysenbayuly",
+    "information_about_close_relatives_previousFullName": null,
+    "information_about_close_relatives_birthDate": "1962-06-09",
+    "information_about_close_relatives_birthPlace": "Kazakhstan, Karaganda region, Karkaralinsky district",
+    "information_about_close_relatives_nationality": "Kazakh",
+    "information_about_close_relatives_individualIdentificationNumber": "620609305248",
+    "information_about_close_relatives_marital_status": "single"
+  },
+  "documents_uploaded": {
+    "documents_uploaded_file": ""
+  },
+  "civil_status_records": {
+    "civil_status_records_file": ""
+  },
+  "registration_address": {
+    "registration_address_file": ""
+  },
+  "the_results_of_the_audit_on_the_databases_of_government_agencies": {
+    "the_results_of_the_audit_on_the_databases_of_government_agencies_file": ""
+  },
+  "results_of_the_initial_interview": {
+    "results_of_the_initial_interview_registrationNumberAndDate": "k/2356 dated 2024-12-09",
+    "results_of_the_initial_interview_conclusion": "Recommended / Not recommended due to a criminal record",
+    "results_of_the_initial_interview_officialPosition": "Inspector of the Personnel Department of the DKNB in Astana, Captain N.B. Isatayev T.M."
+  },
+  "organization": {
+    "organization_status": "Head of the Organization",
+    "organization_name": "LLP 'Saturn'",
+    "organization_ownership_form": "Private",
+    "organization_activity_type": "Freight Transportation",
+    "organization_certificate_id": "B 897899",
+    "organization_registration_date": "2004-06-05",
+    "organization_address": "Astana distritct 21"
+  },
+
+  "real_estate": {
+    "real_estate_type": "Apartment",
+    "real_estate_number": "123456",
+    "real_estate_address": "Astana, Yesil District, Syganak Street 56",
+    "real_estate_region": "Astana",
+    "real_estate_status": "Owned"
+  },
+  "vehicle": {
+    "vehicle_brand": "Toyota",
+    "vehicle_year_of_manufacture": "2020",
+    "vehicle_license_plate": "123ABC",
+    "vehicle_color": "Black"
+  }
+}

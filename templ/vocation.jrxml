@@ -1,529 +1,172 @@
 <!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
-<jasperReport name="CombinedReport" language="java" columnCount="2" printOrder="Horizontal" pageWidth="598" pageHeight="842" columnWidth="279" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a74166ad-23c3-4b18-8db6-2e017067f14e">
-    <property name="com.jaspersoft.studio.unit." value="pixel"/>
-    <property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
-    <property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
-    <property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
-    <property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
-    <property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
-    <property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
-    <property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
-    <property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
-    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
-    <style name="Base" default="true" fontName="Times New Roman" fontSize="10.0" pdfFontName="timesnewromanpsmt.ttf" pdfEncoding="Identity-H" pdfEmbedded="true"/>
-    <style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
-        <box>
-            <pen lineWidth="0.5" lineColor="#000000"/>
-            <topPen lineWidth="0.5" lineColor="#000000"/>
-            <leftPen lineWidth="0.5" lineColor="#000000"/>
-            <bottomPen lineWidth="0.5" lineColor="#000000"/>
-            <rightPen lineWidth="0.5" lineColor="#000000"/>
-        </box>
-    </style>
-    <style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
-        <box>
-            <pen lineWidth="0.5" lineColor="#000000"/>
-            <topPen lineWidth="0.5" lineColor="#000000"/>
-            <leftPen lineWidth="0.5" lineColor="#000000"/>
-            <bottomPen lineWidth="0.5" lineColor="#000000"/>
-            <rightPen lineWidth="0.5" lineColor="#000000"/>
-        </box>
-    </style>
-    <style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
-        <box>
-            <pen lineWidth="0.5" lineColor="#000000"/>
-            <topPen lineWidth="0.5" lineColor="#000000"/>
-            <leftPen lineWidth="0.5" lineColor="#000000"/>
-            <bottomPen lineWidth="0.5" lineColor="#000000"/>
-            <rightPen lineWidth="0.5" lineColor="#000000"/>
-        </box>
-    </style>
+<jasperReport name="JSONBasedReport" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2894065d-9abb-48c0-bb75-7492da9bcc86">
     <field name="fullName" class="java.lang.String"/>
-    <field name="date_of_birth" class="java.lang.String"/>
     <field name="previous_fullName" class="java.lang.String"/>
+    <field name="date_of_birth" class="java.lang.String"/>
+    <field name="place_of_birth" class="java.lang.String"/>
     <field name="nationality" class="java.lang.String"/>
     <field name="IIN" class="java.lang.String"/>
-    <field name="place_of_birth" class="java.lang.String"/>
-    <field name="registration_address" class="java.lang.String"/>
-    <field name="id_card" class="java.lang.String"/>
     <field name="marital_status" class="java.lang.String"/>
-    <field name="relatives_status" class="java.lang.String"/>
     <field name="phone_number" class="java.lang.String"/>
-    <field name="email" class="java.lang.String"/>
     <field name="photo" class="java.lang.String"/>
-    <field name="Education_degree" class="java.lang.String"/>
-    <field name="Offline_online" class="java.lang.String"/>
-    <field name="Gpa" class="java.lang.String"/>
-    <field name="Graduation_year" class="java.lang.String"/>
-    <field name="Qualification" class="java.lang.String"/>
-    <field name="Qualification_degree" class="java.lang.String"/>
-    <field name="ENT_results" class="java.lang.String"/>
-    <field name="Country_of_education" class="java.lang.String"/>
-    <field name="Qualification_increase_courses" class="java.lang.String"/>
-    <field name="Characteristics_from_education_place" class="java.lang.String"/>
-    <background splitType="Prevent"/>
-    <title height="60" splitType="Prevent">
-        <element kind="staticText" uuid="a3e14336-7f8a-4ed0-8644-1be789ad3164" x="0" y="0" width="557" height="60" fontSize="14.0" bold="true" hTextAlign="Center">
-            <text><![CDATA[Заключение
-по результатам первичного изучения с кандидатом на службу/учебу в ОНБ]]></text>
-            <property name="com.jaspersoft.studio.unit.width" value="px"/>
-            <property name="com.jaspersoft.studio.unit.x" value="px"/>
-            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+    <field name="national_id_number" class="java.lang.String"/>
+    <field name="national_id_date_of_provision" class="java.lang.String"/>
+    <field name="national_id_expiration_date" class="java.lang.String"/>
+    <field name="national_id_issuing_authority" class="java.lang.String"/>
+    <field name="passport_issuing_authority" class="java.lang.String"/>
+    <field name="passport_number" class="java.lang.String"/>
+    <field name="passport_expiration_date" class="java.lang.String"/>
+    <field name="passport_date_of_provision" class="java.lang.String"/>
+    <field name="birth_certificate_id" class="java.lang.String"/>
+    <field name="birth_certificate_parents_mom" class="java.lang.String"/>
+    <field name="birth_certificate_parents_dad" class="java.lang.String"/>
+    <field name="birth_certificate_number" class="java.lang.String"/>
+    <field name="birth_certificate_date_of_provision" class="java.lang.String"/>
+    <field name="birth_certificate_issuing_authority" class="java.lang.String"/>
+    <title height="50">
+        <element kind="staticText" uuid="59c425da-3808-4e13-abb1-1141636a83c0" x="0" y="0" width="555" height="30">
+            <text><![CDATA[JSON Data Report]]></text>
         </element>
     </title>
-    <pageHeader splitType="Stretch"/>
     <detail>
-        <band height="470" splitType="Stretch">
-            <element kind="textField" uuid="7918c331-cd91-4e6b-a098-77540b8ac820" x="279" y="295" width="278" height="25" hTextAlign="Center" vTextAlign="Middle" style="Table_TD">
+        <band height="20">
+            <element kind="staticText" uuid="6f441509-4854-4391-8434-90f949925cf1" x="0" y="0" width="275" height="20">
+                <text><![CDATA[Fullname]]></text>
+            </element>
+            <element kind="textField" uuid="94b3aabf-2d90-4709-ba22-5c4b631095ce" x="275" y="0" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{fullName}]]></expression>
+            </element>
+            <element kind="staticText" uuid="c6869376-1fa1-4405-8c46-cc5b17c7b307" x="0" y="20" width="275" height="20">
+                <text><![CDATA[Previous fullname]]></text>
+            </element>
+            <element kind="textField" uuid="a574a146-f104-4ea5-afdb-9e1cb321c27a" x="275" y="20" width="275" height="20" textAdjust="StretchHeight">
                 <expression><![CDATA[$F{previous_fullName}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fe6e0905-003f-4c64-ae12-0c42faeefefe"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box style="Table_TD">
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
             </element>
-            <element kind="textField" uuid="00c3efd9-71e1-4491-9ecc-cdd88fee35ef" x="279" y="320" width="278" height="25" hTextAlign="Center" vTextAlign="Middle" style="Table_TD">
+            <element kind="staticText" uuid="fcb344ac-6ff8-4dc3-bdeb-698fcce9fcdc" x="0" y="40" width="275" height="20">
+                <text><![CDATA[Date of birth]]></text>
+            </element>
+            <element kind="textField" uuid="ce106bb8-1a97-4960-8853-2ac2921ee6c4" x="275" y="40" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{date_of_birth}]]></expression>
+            </element>
+            <element kind="staticText" uuid="1e8c7199-e1ce-4dab-ab77-57be7234ce9b" x="0" y="60" width="275" height="20">
+                <text><![CDATA[Place of birth]]></text>
+            </element>
+            <element kind="textField" uuid="d1f1809d-192b-4b42-8859-a49bb59d90cf" x="275" y="60" width="275" height="20" textAdjust="StretchHeight">
                 <expression><![CDATA[$F{place_of_birth}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ddca89b4-f055-42f6-8344-1b81a98dba0a"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box style="Table_TD">
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
             </element>
-            <element kind="textField" uuid="45451790-3cfa-4e8b-8b21-7a949e966b9b" x="279" y="345" width="278" height="25" hTextAlign="Center" vTextAlign="Middle" style="Table_TD">
-                <expression><![CDATA[$F{id_card}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d7347192-050b-4550-a299-3f129fc19ce9"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box style="Table_TD">
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="81a80c06-1490-4ed5-9e34-a499afa40c12" x="0" y="80" width="275" height="20">
+                <text><![CDATA[Nationality]]></text>
             </element>
-            <element kind="textField" uuid="dc26f6c7-6789-4804-8fcf-75867807c780" x="279" y="370" width="278" height="25" hTextAlign="Center" vTextAlign="Middle" style="Table_TD">
+            <element kind="textField" uuid="ba6f8722-a85d-4d51-bade-5056e5f4046b" x="275" y="80" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{nationality}]]></expression>
+            </element>
+            <element kind="staticText" uuid="d01cd7b6-cc48-4d14-9473-72622efe7b05" x="0" y="100" width="275" height="20">
+                <text><![CDATA[Iin]]></text>
+            </element>
+            <element kind="textField" uuid="04cb4bdf-89fc-40a0-91bb-d9afd746470f" x="275" y="100" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{IIN}]]></expression>
+            </element>
+            <element kind="staticText" uuid="d78b18e6-bcd6-4cf4-b30e-1a2f475f4b88" x="0" y="120" width="275" height="20">
+                <text><![CDATA[Marital status]]></text>
+            </element>
+            <element kind="textField" uuid="61bfeccf-b501-4333-a91b-859a663b379e" x="275" y="120" width="275" height="20" textAdjust="StretchHeight">
                 <expression><![CDATA[$F{marital_status}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc70b2a-28b7-42e5-b203-76aa712f8fd1"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box style="Table_TD">
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
             </element>
-            <element kind="textField" uuid="54f2a642-0a0f-441f-bcc3-aae5c5cd41ad" x="279" y="395" width="278" height="25" hTextAlign="Center" vTextAlign="Middle" style="Table_TD">
-                <expression><![CDATA[$F{relatives_status}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0f55d325-4924-47d3-92e3-5d933c0510a7"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box style="Table_TD">
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="1193c385-873d-4fcc-8fde-1446e86e6ba6" x="0" y="140" width="275" height="20">
+                <text><![CDATA[Phone number]]></text>
             </element>
-            <element kind="textField" uuid="cf58e398-b47c-4202-95c2-ad6bc2f6626c" x="279" y="420" width="278" height="25" hTextAlign="Center" vTextAlign="Middle" style="Table_TD">
+            <element kind="textField" uuid="d51a3acb-2243-4ae0-834a-601d608b4533" x="275" y="140" width="275" height="20" textAdjust="StretchHeight">
                 <expression><![CDATA[$F{phone_number}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d881487-4db2-433b-98af-38cf203072cd"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box style="Table_TD">
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
             </element>
-            <element kind="textField" uuid="4e92675e-3573-4a8b-9d41-ae4d84d0dc5f" x="279" y="445" width="278" height="25" hTextAlign="Center" vTextAlign="Middle" style="Table_TD">
-                <expression><![CDATA[$F{email}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0112e8d4-bbd9-4ad8-ad7c-8e9239252c25"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <box style="Table_TD">
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="60052c20-62fe-4d1f-9178-d902b16b4c47" x="0" y="160" width="275" height="20">
+                <text><![CDATA[Photo]]></text>
             </element>
-            <element kind="textField" uuid="58da97a3-2583-4604-9f35-88f25d9e0dae" x="180" y="55" width="377" height="64" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA["ФИО: " + $F{fullName}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a814cb13-c4f0-4a92-8b4c-77ae27e4c544"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="01b843b1-3cba-4533-9b66-2a9f7b4d8e00" x="275" y="160" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{photo}]]></expression>
             </element>
-            <element kind="textField" uuid="b64c58cc-13a4-4459-994b-5e1b39d6d52f" x="179" y="119" width="200" height="91" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA["Дата рождения (число, месяц,год): " + $F{date_of_birth}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fe6e0905-003f-4c64-ae12-0c42faeefefe"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="7cce7eb2-bf9d-45ea-875f-894929703463" x="0" y="180" width="275" height="20">
+                <text><![CDATA[National id number]]></text>
             </element>
-            <element kind="staticText" uuid="278b2ff6-e29d-4901-9c46-dc88a88e22f1" x="0" y="320" width="279" height="25" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Место рождения: ]]></text>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5a33d238-68e2-4395-be73-62312c48dac2"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="98f1a545-0224-4f23-85e4-b51e2bbdd1a4" x="275" y="180" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{national_id_number}]]></expression>
             </element>
-            <element kind="textField" uuid="cc7bb5c4-f646-4a0c-a14a-5e3775f4f44b" x="379" y="210" width="178" height="85" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA["Национальность: " + $F{nationality}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="08af8f84-89ec-4083-bfd7-a139f854a40b"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="7e853640-bdca-42a2-9983-abc059e68d3f" x="0" y="200" width="275" height="20">
+                <text><![CDATA[National id date of provision]]></text>
             </element>
-            <element kind="textField" uuid="de595710-674a-44be-96fc-cb9b91737681" x="379" y="119" width="178" height="91" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA["ИИН: " + $F{IIN}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd2090b7-150a-452d-b02e-62f51d29561f"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="2820560a-84d5-4085-a47d-3a054a1039c1" x="275" y="200" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{national_id_date_of_provision}]]></expression>
             </element>
-            <element kind="staticText" uuid="c2a352cb-7d95-414d-bb6d-a0023c9d124c" x="0" y="345" width="279" height="25" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Документы, удостоверяющие личность (регистрационный номер, дата выдачи, кем выдан):
-]]></text>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ddca89b4-f055-42f6-8344-1b81a98dba0a"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="94742e01-b434-434d-94c6-f960b800aeca" x="0" y="220" width="275" height="20">
+                <text><![CDATA[National id expiration date]]></text>
             </element>
-            <element kind="textField" uuid="d50e77ff-f39d-4ede-b8b5-23f3ca3f1056" x="180" y="210" width="199" height="85" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA["Адрес прописки: " + $F{registration_address}]]></expression>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d7347192-050b-4550-a299-3f129fc19ce9"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="3dc53e6a-fb25-4c4b-968e-d5aedadbf186" x="275" y="220" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{national_id_expiration_date}]]></expression>
             </element>
-            <element kind="staticText" uuid="a4bd5b91-0614-4290-82a9-3ae342c3ba36" x="0" y="370" width="279" height="25" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Семейное положение (подтверждения заключения/расторжения брака):  ]]></text>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcc70b2a-28b7-42e5-b203-76aa712f8fd1"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="1c6ff499-b9d1-4ec0-b5d8-464779cc2525" x="0" y="240" width="275" height="20">
+                <text><![CDATA[National id issuing authority]]></text>
             </element>
-            <element kind="staticText" uuid="98c341fe-2852-4f42-86a1-97ac397ec59e" x="0" y="420" width="279" height="25" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Телефоны]]></text>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d881487-4db2-433b-98af-38cf203072cd"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="d610fb09-b97c-4a78-a6ce-ddaace88edf1" x="275" y="240" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{national_id_issuing_authority}]]></expression>
             </element>
-            <element kind="staticText" uuid="46e85f3c-8e35-40d6-8e18-10b7dd83d98e" x="0" y="395" width="279" height="25" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Сведения о близких родственниках (раздел с раскрытием полных данных на близких родственников и без):]]></text>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0f55d325-4924-47d3-92e3-5d933c0510a7"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="460e920e-c079-4246-8d4a-849053f73231" x="0" y="260" width="275" height="20">
+                <text><![CDATA[Passport issuing authority]]></text>
             </element>
-            <element kind="staticText" uuid="ff7bec20-56bc-4b2d-9039-c5de3dcbb6e3" x="0" y="445" width="279" height="25" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Электронная почта (при наличии):]]></text>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0112e8d4-bbd9-4ad8-ad7c-8e9239252c25"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="acb8baea-21f9-4c72-814d-07d58867f09a" x="275" y="260" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{passport_issuing_authority}]]></expression>
             </element>
-            <element kind="staticText" uuid="23bd8486-8360-4402-a3ce-cb33fdb195e3" x="0" y="295" width="279" height="25" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Прежняя Ф.И.О.:]]></text>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3d68ab66-2479-490a-8595-ee322fe6dfcd"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="0b4c211c-566a-471e-ab04-8d5dd5496a29" x="0" y="280" width="275" height="20">
+                <text><![CDATA[Passport number]]></text>
             </element>
-            <element kind="staticText" uuid="5413ddb5-9023-4496-b35c-49c2fd9ad813" x="0" y="30" width="557" height="25" bold="true" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Анкетные данные]]></text>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="057e48a3-344d-4f30-9213-14843603404c" x="275" y="280" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{passport_number}]]></expression>
             </element>
-            <element kind="staticText" uuid="ca085906-7498-4c49-8930-8d9a03a17621" x="0" y="0" width="279" height="30" bold="true" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Сведения  кандидата и его близких родственников]]></text>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="90dcff04-767c-4b99-8e4e-7c310c289b39" x="0" y="300" width="275" height="20">
+                <text><![CDATA[Passport expiration date]]></text>
             </element>
-            <element kind="staticText" uuid="1639a79f-877a-4cb0-876f-233f5fe6a8db" x="279" y="0" width="278" height="30" bold="true" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Источник пополнения сведений]]></text>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="d7f7a846-d910-4306-8d8f-9c0833a3ae3c" x="275" y="300" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{passport_expiration_date}]]></expression>
             </element>
-            <element kind="rectangle" uuid="0d8637c0-2e6b-42e8-9673-099c07f26edb" x="0" y="55" width="180" height="240">
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
+            <element kind="staticText" uuid="d4290645-a777-4364-b196-17e50fce3e02" x="0" y="320" width="275" height="20">
+                <text><![CDATA[Passport date of provision]]></text>
             </element>
-            <element kind="image" uuid="5ca2376c-b8be-4318-9b2c-625cef44d138" positionType="FixRelativeToBottom" x="10" y="30" width="160" height="180" onErrorType="Blank" lazy="true">
-                <expression><![CDATA[
-        new java.io.ByteArrayInputStream(
-            java.util.Base64.getDecoder().decode(
-                $F{photo}.replaceFirst("^data:image/[^;]+;base64,", "")
-            )
-        )
-    ]]></expression>
+            <element kind="textField" uuid="70291f78-c809-4d2c-9a3f-f5502853a99a" x="275" y="320" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{passport_date_of_provision}]]></expression>
             </element>
-            <element kind="staticText" uuid="4b22f0f0-c7e1-480a-8979-38aeb446b264" x="0" y="0" width="557" height="230" bold="true" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Образование]]></text>
-                <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="2a50aee1-2498-4e07-890d-56035111fa3e" x="0" y="340" width="275" height="20">
+                <text><![CDATA[Birth certificate id]]></text>
             </element>
-            <element kind="staticText" uuid="f15ee534-dbc9-48e0-bf82-c0ea11bd930e" x="0" y="30" width="340" height="160" hTextAlign="Left" vTextAlign="Middle">
-                <text><![CDATA[    • послевузовское/высшее/средне-специальное/среднее/военное;
-    • очно/заочно;
-    • средний балл/GPA;
-    • наименование и год окончания учебного заведения;
-    • специальность по образованию, квалификация;
-    • категория специальности;
-    • балл ЕНТ;
-    • страна обучения]]></text>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5a33d238-68e2-4395-be73-62312c48dac2"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="e80c3744-5c04-45ab-a4b3-c111ccdf5d56" x="275" y="340" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{birth_certificate_id}]]></expression>
             </element>
-            <element kind="textField" uuid="e1ff34b5-6a3e-4ebd-bcb5-ad1b9297502e" x="340" y="30" width="217" height="20" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA[$F{Education_degree}]]></expression>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="c7f43351-30f2-48af-8c1f-861e855217ff" x="0" y="360" width="275" height="20">
+                <text><![CDATA[Birth certificate parents mom]]></text>
             </element>
-            <element kind="textField" uuid="cbe81f9b-4774-465f-b951-84077ee25ccf" x="340" y="50" width="217" height="20" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA[$F{Offline_online}]]></expression>
-                <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="0cfab178-d664-4f47-9591-2297fd12fda5" x="275" y="360" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{birth_certificate_parents_mom}]]></expression>
             </element>
-            <element kind="textField" uuid="8d1128ac-49fe-4272-a7a5-b6e5a9908f78" x="340" y="70" width="217" height="20" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA[$F{Gpa}]]></expression>
-                <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="10634f9c-4ae2-4014-9893-8da12d3a1a7f" x="0" y="380" width="275" height="20">
+                <text><![CDATA[Birth certificate parents dad]]></text>
             </element>
-            <element kind="textField" uuid="f790f4f7-2bce-41b2-80a8-4a7dede41c14" x="340" y="90" width="217" height="20" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA[$F{Graduation_year}]]></expression>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="69eb90a1-d92d-4860-b874-6c49e58e7932" x="275" y="380" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{birth_certificate_parents_dad}]]></expression>
             </element>
-            <element kind="textField" uuid="0b59af9d-2cfb-45f4-a693-abdb8e0d7dc7" x="340" y="110" width="217" height="20" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA[$F{Qualification}]]></expression>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="bc58c982-abcc-421a-b8ca-a62cac2ebc55" x="0" y="400" width="275" height="20">
+                <text><![CDATA[Birth certificate number]]></text>
             </element>
-            <element kind="textField" uuid="e0dfa910-5669-40c8-b584-dbd9a24633f4" x="340" y="130" width="217" height="20" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA[$F{Qualification_degree}]]></expression>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="bb796aaf-8a10-43ab-8e8a-e07858855670" x="275" y="400" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{birth_certificate_number}]]></expression>
             </element>
-            <element kind="textField" uuid="6496af24-b6e4-4245-ae0d-8734745b8125" x="340" y="150" width="217" height="20" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA[$F{ENT_results}]]></expression>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="1803776f-857f-411e-9632-ff62b1ebcc4e" x="0" y="420" width="275" height="20">
+                <text><![CDATA[Birth certificate date of provision]]></text>
             </element>
-            <element kind="textField" uuid="1334b2de-9826-411d-9200-0dc84a712c10" x="340" y="170" width="217" height="20" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA[$F{Country_of_education}]]></expression>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="a756f2a0-66d8-4839-884d-cd69441b1dd5" x="275" y="420" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{birth_certificate_date_of_provision}]]></expression>
             </element>
-            <element kind="staticText" uuid="612c28b0-b44d-4a35-8998-8e0444ca0382" x="0" y="190" width="340" height="61" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Курсы повышения квалификации:
-**предоставляется кандидатом самостоятельно (при наличии подтверждающего документа)]]></text>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ddca89b4-f055-42f6-8344-1b81a98dba0a"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="staticText" uuid="0543babb-f540-4885-ab86-47d37f62ea1b" x="0" y="440" width="275" height="20">
+                <text><![CDATA[Birth certificate issuing authority]]></text>
             </element>
-            <element kind="textField" uuid="c24b0b83-5981-4ea2-97cb-afb342e8ef92" x="340" y="190" width="217" height="61" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA[$F{Qualification_increase_courses}]]></expression>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
-            </element>
-            <element kind="staticText" uuid="13939545-02dc-4992-8d43-189eda6c9596" x="0" y="251" width="340" height="61" hTextAlign="Center" vTextAlign="Middle">
-                <text><![CDATA[Характеристика с места учебы:
-**кандидат предоставляет самостоятельно (для школьников – за подписью классного руководителя и заведующего по воспитательной работе, для студентов – куратора и декана]]></text>
-                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ddca89b4-f055-42f6-8344-1b81a98dba0a"/>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.x" value="px"/>
-                <property name="com.jaspersoft.studio.unit.y" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
-            </element>
-            <element kind="textField" uuid="126d8012-ac59-41ef-81a3-f569728e0d8c" x="340" y="251" width="217" height="61" hTextAlign="Center" vTextAlign="Middle">
-                <expression><![CDATA[$F{Characteristics_from_education_place}]]></expression>
-                <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                <box>
-                    <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-                </box>
+            <element kind="textField" uuid="6a6de130-673a-43a0-aa9f-7ce9c887d839" x="275" y="440" width="275" height="20" textAdjust="StretchHeight">
+                <expression><![CDATA[$F{birth_certificate_issuing_authority}]]></expression>
             </element>
         </band>
     </detail>
