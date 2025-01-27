@@ -1,16 +1,6 @@
-<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
-<jasperReport name="vocation" language="java" columnCount="1" pageWidth="601" pageHeight="8000" orientation="Landscape" whenNoDataType="NoPages" columnWidth="561" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b70fc8ce-e006-4867-80c1-9f84afec7d68" ignorePagination="true">
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="vocation" language="java" columnCount="1" pageWidth="601" pageHeight="10000" whenNoDataType="NoPages" columnWidth="561" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b70fc8ce-e006-4867-80c1-9f84afec7d68" ignorePagination="true">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MainDataAdapter"/>
-	<property name="com.jaspersoft.studio.unit." value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
-	<style name="Base" default="true" fontName="Times New Roman" fontSize="12" pdfFontName="timesnewromanpsmt.ttf" pdfEncoding="Identity-H" pdfEmbedded="true"/>
 	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
 		<box>
 			<pen lineWidth="0.5" lineColor="#000000"/>
@@ -38,7 +28,8 @@
 			<rightPen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
-    <field name="photo" class="java.lang.String"/>
+	<style name="Base" default="true" fontName="Times New Roman" fontSize="12" pdfFontName="timesnewromanpsmt.ttf" pdfEncoding="Identity-H" pdfEmbedded="true"/>
+	<field name="photo" class="java.lang.String"/>
 	<field name="photo_relative" class="java.lang.String"/>
 	<field name="fullName" class="java.lang.String">
 		<description><![CDATA[fullName]]></description>
@@ -248,7 +239,7 @@
 	<field name="results_of_the_initial_interview_officialPosition" class="java.lang.String"/>
 	<background splitType="Stretch"/>
 	<detail>
-		<band height="7716" splitType="Stretch">
+		<band height="9960" splitType="Stretch">
 			<element kind="frame" uuid="770e2b7a-5a40-4c87-8aac-792d5740bc9a" positionType="Float" stretchType="ContainerBottom" x="0" y="200" width="560" height="30">
 				<element kind="staticText" uuid="aae77fe4-3d20-449b-b761-bd08c2afd008" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="560" height="30" bold="true" hTextAlign="Center" vTextAlign="Middle">
 					<text><![CDATA[Сауалнамалық деректер/Анкетные данные]]></text>
@@ -341,10 +332,10 @@
 			</element>
 			<element kind="frame" uuid="0434996f-a363-4336-be0c-d4165e5684e5" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="560" height="50" printInFirstWholeBand="true">
 				<element kind="staticText" uuid="986df8f3-4ddf-49dc-b6ff-d2ad1293158a" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="560" height="50" printInFirstWholeBand="true" bold="true" hTextAlign="Center" vTextAlign="Middle">
-					<text><![CDATA[Кандидатты бастапқы зерделеу нәтижелері және кандидат пен оның жақын 
+					<text><![CDATA[Кандидатты бастапқы зерделеу нәтижелері және кандидат пен оның жақын
 туыстарын тексеру бойынша қорытынды/ЗАКЛЮЧЕНИЕ
-по результатам первичного изучения и проверки 
-кандидата и его близких родственников 
+по результатам первичного изучения и проверки
+кандидата и его близких родственников
 ]]></text>
 				</element>
 			</element>
@@ -372,7 +363,6 @@
 					</box>
 				</element>
 			</element>
-
 			<element kind="frame" uuid="ac6f869e-5a17-4990-8bb1-dfa0f8b7c244" positionType="Float" stretchType="ContainerBottom" x="0" y="320" width="560" height="30">
 				<element kind="staticText" uuid="25f78d08-9c7c-4639-bfff-dcecbd75d55b" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="280" height="30" hTextAlign="Center" vTextAlign="Middle">
 					<text><![CDATA[Туған жері/Место рождения ]]></text>
@@ -754,7 +744,7 @@
 			</element>
 			<element kind="frame" uuid="49ad78c4-f8f4-4011-b6bd-1c9f23bc0a88" positionType="Float" stretchType="ContainerBottom" x="0" y="1002" width="560" height="30">
 				<element kind="staticText" uuid="91318fb9-3133-4158-ba3d-3c8d32ae2a99" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="560" height="30" bold="true" hTextAlign="Center" vTextAlign="Middle">
-					<text><![CDATA[Некеге тұру (ерлі-зайыпты болу) туралы куәлігі /Свидетельство о заключении 
+					<text><![CDATA[Некеге тұру (ерлі-зайыпты болу) туралы куәлігі /Свидетельство о заключении
 брака (супружества):
 ]]></text>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -807,9 +797,9 @@
 			</element>
 			<element kind="frame" uuid="4e166cbc-4810-4983-ba3d-ac3ebd8594d1" positionType="Float" stretchType="ContainerBottom" x="0" y="862" width="560" height="50">
 				<element kind="staticText" uuid="e0397572-0ca6-4d19-9723-ce7de5f0eeda" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="280" height="50" hTextAlign="Center" vTextAlign="Middle">
-					<text><![CDATA[Ата-анасы/Родители 
-Әкесі (тегі, аты, әкесінің аты): 
-Анасы (тегі, аты, әкесінің аты):  
+					<text><![CDATA[Ата-анасы/Родители
+Әкесі (тегі, аты, әкесінің аты):
+Анасы (тегі, аты, әкесінің аты):
 ]]></text>
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fa3ad04a-f6a3-4553-933e-720a87a4bac5"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -973,10 +963,10 @@
 			<element kind="frame" uuid="ff651627-e4a5-40c7-838f-69567cc9d78b" positionType="Float" stretchType="ContainerBottom" x="0" y="1122" width="560" height="60">
 				<element kind="staticText" uuid="20e96b69-40a9-43d6-a5e9-5c0be66179c9" positionType="Float" stretchType="ContainerBottom" x="0" y="-30" width="280" height="90" bold="false" hTextAlign="Center" vTextAlign="Middle">
 					<text><![CDATA[Неке тұрғаннан (ерлі-зайыпты болғаннан) кейін тектер берілді
-жұбайына: 
+жұбайына:
 зайыбына:/После заключения брака (супружества) присвоены фамилии
-супругу: 
-супруге: 
+супругу:
+супруге:
 ]]></text>
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="80eba63d-b8c1-4b02-a546-6f7b59407514"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -1204,7 +1194,7 @@
 			</element>
 			<element kind="frame" uuid="245ef24a-9773-4897-8a1f-f8058425e5bc" positionType="Float" stretchType="ContainerBottom" x="0" y="1452" width="560" height="30">
 				<element kind="staticText" uuid="302dabcc-7b4e-4f79-a420-cbcb325b40f6" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="560" height="30" bold="true" hTextAlign="Center" vTextAlign="Middle">
-					<text><![CDATA[Азаматтық хал актілерінің жазбалары/Записи актов гражданского состояния 
+					<text><![CDATA[Азаматтық хал актілерінің жазбалары/Записи актов гражданского состояния
 
 ]]></text>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -1893,8 +1883,8 @@
 			</element>
 			<element kind="frame" uuid="aadde484-109f-4d03-be2e-384e228d6066" positionType="Float" stretchType="ContainerBottom" x="0" y="2286" width="560" height="30">
 				<element kind="staticText" uuid="a2edb82e-55fb-4301-9a88-c854f1ebbef6" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="280" height="30" hTextAlign="Center" vTextAlign="Middle">
-					<text><![CDATA[Қабылдау және тоқтату күні/Дата приема 
-и прекращения  
+					<text><![CDATA[Қабылдау және тоқтату күні/Дата приема
+и прекращения
 ]]></text>
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d4531360-1313-4607-9061-0117a1508811"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -2357,8 +2347,8 @@
 			</element>
 			<element kind="frame" uuid="9505b46c-9a20-42b7-864c-dac376561405" positionType="Float" stretchType="ContainerBottom" x="0" y="3026" width="560" height="120">
 				<element kind="staticText" uuid="dfc8c4b1-437f-42d3-a6a7-fe06f7195d5c" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="280" height="120" hTextAlign="Center" vTextAlign="Middle">
-					<text><![CDATA[Бұрынғы үкім туралы ақпарат (күні, сот, жазалау шарасы және т.б.)/Информация 
-о предыдущем приговоре 
+					<text><![CDATA[Бұрынғы үкім туралы ақпарат (күні, сот, жазалау шарасы және т.б.)/Информация
+о предыдущем приговоре
 ]]></text>
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fa3ad04a-f6a3-4553-933e-720a87a4bac5"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -4554,7 +4544,7 @@
 				</element>
 				<element kind="staticText" uuid="6f110c5b-8469-4de3-98e1-e2dd8f30696e" positionType="Float" stretchType="ContainerBottom" x="336" y="0" width="112" height="30" hTextAlign="Center" vTextAlign="Middle">
 					<text><![CDATA[Өңірі/
-Регион 
+Регион
 ]]></text>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<box>
@@ -4778,7 +4768,7 @@
 			</element>
 			<element kind="frame" uuid="ee8f6c80-14e5-49c5-8f8a-4ef8b5b23e4c" positionType="Float" stretchType="ContainerBottom" x="0" y="7086" width="560" height="30">
 				<element kind="staticText" uuid="19ae3a5e-a527-450b-b51e-73e82643fc93" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="280" height="30" hTextAlign="Center" vTextAlign="Middle">
-					<text><![CDATA[Бұрынғы тегі, аты, әкесінің аты (бар болса)/ Прежняя фамилия, имя, отечество 
+					<text><![CDATA[Бұрынғы тегі, аты, әкесінің аты (бар болса)/ Прежняя фамилия, имя, отечество
 (при его наличии)
 ]]></text>
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fa3ad04a-f6a3-4553-933e-720a87a4bac5"/>
@@ -4914,7 +4904,7 @@
 					<expression><![CDATA[
         new java.io.ByteArrayInputStream(
             java.util.Base64.getDecoder().decode(
-                $F{photo}.replaceFirst("^data:image/[^;]+;base64,", "")
+                $F{photo_relative}.replaceFirst("^data:image/[^;]+;base64,", "")
             )
         )
     ]]></expression>
@@ -5302,6 +5292,7 @@
 				</element>
 			</element>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout"/>
 		</band>
 	</detail>
 </jasperReport>
