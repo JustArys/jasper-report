@@ -51,7 +51,7 @@
 		<description><![CDATA[nationality]]></description>
 		<property name="net.sf.jasperreports.json.field.expression" value="nationality"/>
 	</field>
-	<field name="IIN" class="java.lang.Long">
+	<field name="IIN" class="java.lang.String">
 		<description><![CDATA[IIN]]></description>
 		<property name="net.sf.jasperreports.json.field.expression" value="IIN"/>
 	</field>
