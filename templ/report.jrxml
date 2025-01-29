@@ -1,5 +1,5 @@
 <!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
-<jasperReport name="vocation" language="java" columnCount="1" pageWidth="601" pageHeight="10000" whenNoDataType="NoPages" columnWidth="561" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b70fc8ce-e006-4867-80c1-9f84afec7d68" ignorePagination="true">
+<jasperReport name="vocation" language="java" columnCount="1" pageWidth="601" pageHeight="10000" columnWidth="561" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Error" uuid="b70fc8ce-e006-4867-80c1-9f84afec7d68" ignorePagination="true">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MainDataAdapter"/>
 	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
 		<box>
@@ -28,7 +28,7 @@
 			<rightPen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
-	<style name="Base" default="true" fontName="Times New Roman" fontSize="12" pdfFontName="timesnewromanpsmt.ttf" pdfEncoding="Identity-H" pdfEmbedded="true"/>
+	<style name="Base" default="true" fontName="Times New Roman" fontSize="12.0" pdfFontName="timesnewromanpsmt.ttf" pdfEncoding="Identity-H" pdfEmbedded="true"/>
 	<field name="photo" class="java.lang.String"/>
 	<field name="photo_relative" class="java.lang.String"/>
 	<field name="fullName" class="java.lang.String">
@@ -5225,7 +5225,7 @@
 						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 				</element>
-				<element kind="textField" uuid="fb35635b-726d-4ec4-abf3-2a702c1e125a" positionType="Float" stretchType="ContainerBottom" x="280" y="0" width="280" height="30" markup="rtf" textAdjust="StretchHeight" hTextAlign="Center" vTextAlign="Middle">
+				<element kind="textField" uuid="fb35635b-726d-4ec4-abf3-2a702c1e125a" positionType="Float" stretchType="ContainerBottom" x="280" y="0" width="280" height="30"  textAdjust="StretchHeight" hTextAlign="Center" vTextAlign="Middle">
 					<expression><![CDATA[$F{results_of_the_initial_interview_officialPosition}]]></expression>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
