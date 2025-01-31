@@ -249,7 +249,7 @@
 	<field name="results_of_the_initial_interview_officialPosition" class="java.lang.String"/>
 	<group name="Group1" keepTogether="true">
 		<groupHeader>
-			<band height="782" splitType="Immediate">
+			<band height="802" splitType="Immediate">
 				<element kind="frame" uuid="770e2b7a-5a40-4c87-8aac-792d5740bc9a" positionType="Float" stretchType="ContainerBottom" x="0" y="190" width="560" height="30">
 					<element kind="staticText" uuid="aae77fe4-3d20-449b-b761-bd08c2afd008" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="560" height="30" bold="true" hTextAlign="Center" vTextAlign="Middle">
 						<text><![CDATA[Сауалнамалық деректер/Анкетные данные]]></text>
@@ -2343,7 +2343,6 @@
 						</box>
 					</element>
 				</element>
-
 				<element kind="frame" uuid="86455a0b-056d-45b7-8883-3d08dd8eb420" positionType="Float" stretchType="ContainerBottom" x="0" y="592" width="560" height="30" removeLineWhenBlank="true" printInFirstWholeBand="true">
 					<element kind="staticText" uuid="48789084-f584-45a7-8f82-01b4fe9abd92" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="280" height="30" removeLineWhenBlank="true" printInFirstWholeBand="true" hTextAlign="Center" vTextAlign="Middle">
 						<text><![CDATA[Қылмыстың ауырлығы/Тяжесть преступления]]></text>
