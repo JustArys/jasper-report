@@ -2337,6 +2337,7 @@
 						</box>
 					</element>
 				</element>
+
 				<element kind="frame" uuid="86455a0b-056d-45b7-8883-3d08dd8eb420" positionType="Float" stretchType="ContainerBottom" x="0" y="592" width="560" height="30" removeLineWhenBlank="true" printInFirstWholeBand="true">
 					<element kind="staticText" uuid="48789084-f584-45a7-8f82-01b4fe9abd92" positionType="Float" stretchType="ContainerBottom" x="0" y="0" width="280" height="30" removeLineWhenBlank="true" printInFirstWholeBand="true" hTextAlign="Center" vTextAlign="Middle">
 						<text><![CDATA[Қылмыстың ауырлығы/Тяжесть преступления]]></text>
